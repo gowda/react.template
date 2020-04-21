@@ -35,6 +35,17 @@ $ npm run lint
 
 Configuratin is in [.eslintrc.js](.eslintrc.js)
 
+#### Run cucumber tests
+```bash
+$ npm run test
+```
+
+Server running at [http://localhost:3000](http://localhost:3000) is required
+for cucumber tests. Run `webpack-dev-server` using:
+```bash
+$ npm run server
+```
+
 ## License
 
 >> ----------------------------------------------------------------------------

@@ -4,8 +4,9 @@
   "description": "react application template",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext .js --ext .jsx src/",
-    "server": "webpack-dev-server --mode development"
+    "lint": "eslint --ext .js --ext .jsx src/ features/",
+    "server": "webpack-dev-server --mode development",
+    "test": "NODE_ENV='test' cucumber-js npx cucumber-js --require-module @babel/register features/app.feature"
   },
   "keywords": [],
   "author": "Basavanagowda Kanur <basavanagowda@gmail.com>",
@@ -13,10 +14,15 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
+    "@babel/register": "^7.9.0",
     "babel-loader": "^8.1.0",
+    "chai": "^4.2.0",
+    "chromedriver": "^81.0.0",
     "copy-webpack-plugin": "^5.1.1",
+    "cucumber": "^6.0.5",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
@@ -25,6 +31,7 @@
     "eslint-plugin-react-hooks": "^3.0.0",
     "html-webpack-plugin": "^4.2.0",
     "html-webpack-tags-plugin": "^2.0.17",
+    "selenium-webdriver": "^4.0.0-alpha.7",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3",
