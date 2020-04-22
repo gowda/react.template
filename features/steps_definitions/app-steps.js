@@ -21,7 +21,7 @@ After(function() {
 });
 
 Given('I navigate to the url {string}', function(url) {
-  const chromeOptions = new chrome.Options();
+  const chromeOptions = new chrome.Options().headless();
   chromeOptions.addArguments('window-size=1440,900');
 
   this.driver = new seleniumWebdriver.Builder()
