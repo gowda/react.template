@@ -1,4 +1,6 @@
 # react.template
+![](https://github.com/gowda/react.template/workflows/lint-and-tests/badge.svg)
+![](https://github.com/gowda/react.template/workflows/features/badge.svg)
 
 template for react application.
 
