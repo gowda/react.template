@@ -4,6 +4,7 @@
   "description": "react application template",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --ext .js --ext .jsx src/",
     "server": "webpack-dev-server --mode development"
   },
   "keywords": [],
@@ -16,6 +17,12 @@
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^5.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
     "html-webpack-plugin": "^4.2.0",
     "html-webpack-tags-plugin": "^2.0.17",
     "webpack": "^4.42.1",
