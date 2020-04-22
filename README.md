@@ -24,7 +24,7 @@ $ npm run server
 ```
 
 Development server listens at [http://localhost:3000](http://localhost:3000).
-Can be changed by updating [webpack.config.js](webpack.config.js).
+Can be changed by updating [webpack.development.js](webpack.development.js#L13).
 
 #### Run linter
 ```bash
