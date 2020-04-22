@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint --ext .js --ext .jsx src/ features/",
     "server": "webpack-dev-server --mode development",
-    "test": "NODE_ENV='test' cucumber-js npx cucumber-js --require-module @babel/register features/app.feature"
+    "features": "NODE_ENV='test' cucumber-js npx cucumber-js --require-module @babel/register features/app.feature",
+    "test": "jest"
   },
   "keywords": [],
   "author": "Basavanagowda Kanur <basavanagowda@gmail.com>",
@@ -23,6 +24,8 @@
     "chromedriver": "^81.0.0",
     "copy-webpack-plugin": "^5.1.1",
     "cucumber": "^6.0.5",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
@@ -31,6 +34,7 @@
     "eslint-plugin-react-hooks": "^3.0.0",
     "html-webpack-plugin": "^4.2.0",
     "html-webpack-tags-plugin": "^2.0.17",
+    "jest": "^25.4.0",
     "selenium-webdriver": "^4.0.0-alpha.7",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
@@ -40,5 +44,11 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "jest": {
+    "verbose": true,
+    "setupFilesAfterEnv": [
+      "<rootDir>src/setupTests.js"
+    ]
   }
 }

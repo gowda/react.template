@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    jest: true,
   },
   extends: [
     'plugin:react/recommended',
@@ -25,6 +26,16 @@ module.exports = {
     'react/prop-types': 'error',
     'react/destructuring-assignment': 'warn',
     'prefer-destructuring': 'warn',
-    'no-unused-vars': ['error', {'argsIgnorePattern': '^_'}]
+    'no-unused-vars': ['error', {'argsIgnorePattern': '^_'}],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        'devDependencies': [
+          'src/setupTests.js',
+          'src/**/*.test.js',
+          'src/**/*.test.jsx'
+        ]
+      }
+    ],
   }
 }

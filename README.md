@@ -1,4 +1,4 @@
-# react.js
+# react.template
 
 template for react application.
 
@@ -35,9 +35,14 @@ $ npm run lint
 
 Configuratin is in [.eslintrc.js](.eslintrc.js)
 
-#### Run cucumber tests
+#### Run unit tests
 ```bash
 $ npm run test
+```
+
+#### Run cucumber tests
+```bash
+$ npm run features
 ```
 
 Server running at [http://localhost:3000](http://localhost:3000) is required
