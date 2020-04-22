@@ -3,7 +3,7 @@ import { setWorldConstructor, setDefaultTimeout } from 'cucumber';
 function CustomWorld() {
   this.driver = null;
 
-  setDefaultTimeout(5000);
+  setDefaultTimeout(10000);
 }
 
 setWorldConstructor(CustomWorld);
